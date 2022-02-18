@@ -28,7 +28,7 @@ $(document).ready(function () {
     if ($(".checkbox").is(":checked")) {
       $(".menu").find("i").attr("class", "");
       $(".menu").find("i").attr("class", "fa-solid fa-bars");
-      $(".side-nav").hide(800);
+      $(".side-nav").hide(600);
       $(".checkbox").prop("checked", false);
     }
   });
@@ -36,11 +36,11 @@ $(document).ready(function () {
     if ($(".checkbox").is(":checked")) {
       $(".menu").find("i").attr("class", "");
       $(".menu").find("i").attr("class", "fa-solid fa-xmark");
-      $(".side-nav").show(1000);
+      $(".side-nav").show(400);
     } else {
       $(".menu").find("i").attr("class", "");
       $(".menu").find("i").attr("class", "fa-solid fa-bars");
-      $(".side-nav").hide(1000);
+      $(".side-nav").hide(600);
     }
   });
   $(this).scrollTop(0);
