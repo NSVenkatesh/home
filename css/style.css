@@ -485,7 +485,7 @@ ul {
     overflow: hidden;
     border-right: 1px dashed darkred;
     border-bottom: 1px dashed deeppink;
-    box-shadow: 0 0 400px 150px maroon;
+    box-shadow: 0 0 300px 100px maroon;
     display: none;
   }
   .menu i {
