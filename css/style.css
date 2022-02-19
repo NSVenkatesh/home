@@ -185,7 +185,7 @@ ul {
 .c-skills {
   margin: 20px 15px 0px;
 }
-.c-skills h5 {
+.c-skills h4 {
   font-size: 15px;
 }
 .skill-range {
@@ -308,7 +308,7 @@ ul {
   border-radius: 5px;
 }
 .c-btn {
-  padding: 5px 18px;
+  padding: 10px 20px;
   font-size: 20px;
   margin: 0px 20px;
   outline: none;
@@ -485,16 +485,22 @@ ul {
     overflow: hidden;
     border-right: 1px dashed darkred;
     border-bottom: 1px dashed deeppink;
-    box-shadow: 0 0 300px 100px maroon;
+    box-shadow: -8px -1px 0px 1px teal inset;
     display: none;
   }
-  .menu i {
+  /* .menu i {
     font-size: 26px;
     background-color: hotpink;
     color: black;
+  } */
+  .menu img {
+    width: 26px;
+    height: 28px;
   }
   .menu {
-    padding: 5px 8px 3px;
+    width: 41px;
+    height: 40px;
+    padding: 5px 8px;
     margin: 10px;
     background-color: hotpink;
     border-radius: 5px;

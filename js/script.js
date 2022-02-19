@@ -26,20 +26,20 @@ $(document).ready(function () {
     }
     x++;
     if ($(".checkbox").is(":checked")) {
-      $(".menu").find("i").attr("class", "");
-      $(".menu").find("i").attr("class", "fa-solid fa-bars");
+      $(".menu").find("img").attr("src", "");
+      $(".menu").find("img").attr("src", "img/xmark-solid.svg");
       $(".side-nav").hide(600);
       $(".checkbox").prop("checked", false);
     }
   });
   $(".menu").click(function () {
     if ($(".checkbox").is(":checked")) {
-      $(".menu").find("i").attr("class", "");
-      $(".menu").find("i").attr("class", "fa-solid fa-xmark");
+      $(".menu").find("img").attr("src", "");
+      $(".menu").find("img").attr("src", "img/xmark-solid.svg");
       $(".side-nav").show(400);
     } else {
-      $(".menu").find("i").attr("class", "");
-      $(".menu").find("i").attr("class", "fa-solid fa-bars");
+      $(".menu").find("img").attr("src", "");
+      $(".menu").find("img").attr("src", "img/bars-solid.svg");
       $(".side-nav").hide(600);
     }
   });
