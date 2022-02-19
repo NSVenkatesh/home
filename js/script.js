@@ -4,7 +4,6 @@ $(document).ready(function () {
   $(".opac").click(function () {
     let id = $(this).attr("id");
     let href = $(this).find("a").attr("href");
-    console.log(href);
     if (href == "#resume") {
       $(".skill-percent").addClass("skill-a");
     } else {
