@@ -25,14 +25,10 @@ $(document).ready(function () {
       $(this).attr("id", " ");
     }
     x++;
-    if ($(".checkbox").is(":checked")) {
-      $(".menu").find("img").attr("src", "");
-      $(".menu").find("img").attr("src", "img/bars-solid.svg");
-      $(".side-nav").hide(600);
-      $(".checkbox").prop("checked", false);
-    }
+    hide();
   });
   $(".menu").click(function () {
+    event.stopPropagation();
     if ($(".checkbox").is(":checked")) {
       $(".menu").find("img").attr("src", "");
       $(".menu").find("img").attr("src", "img/xmark-solid.svg");
@@ -43,5 +39,16 @@ $(document).ready(function () {
       $(".side-nav").hide(600);
     }
   });
+  $("body").click(function () {
+    hide();
+  });
   $(this).scrollTop(0);
+  function hide() {
+    if ($(".checkbox").is(":checked")) {
+      $(".menu").find("img").attr("src", "");
+      $(".menu").find("img").attr("src", "img/bars-solid.svg");
+      $(".side-nav").hide(600);
+      $(".checkbox").prop("checked", false);
+    }
+  }
 });
