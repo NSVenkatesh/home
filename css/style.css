@@ -511,8 +511,8 @@ ul {
   .menu .checkbox {
     position: absolute;
     display: block;
-    height: 36px;
-    width: 32px;
+    height: 40px;
+    width: 41px;
     right: 0px;
     top: 0px;
     opacity: 0;
