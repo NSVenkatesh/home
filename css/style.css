@@ -10,7 +10,7 @@ ul {
 }
 .main {
   display: flex;
-  background-color: #192438;
+  background-color: #0f1622;
   font-family: cursive, sans-serif;
 }
 /* Left side */
@@ -93,7 +93,7 @@ ul {
 .right {
   width: 88vw;
   padding: 0px 30px 0px 40px;
-  background-color: #192438;
+  background-color: #0f1622;
   transform: translateX(11vw);
   color: white;
 }
