@@ -10,7 +10,7 @@ ul {
 }
 .main {
   display: flex;
-  background-color: #0f1622;
+  background-color: #192438;
   font-family: cursive, sans-serif;
 }
 /* Left side */
@@ -93,7 +93,7 @@ ul {
 .right {
   width: 88vw;
   padding: 0px 30px 0px 40px;
-  background-color: #0f1622;
+  background-color: #192438;
   transform: translateX(11vw);
   color: white;
 }
@@ -251,7 +251,7 @@ ul {
 .p-head p {
   border-color: tomato;
 }
-.p-content img {
+.img-scale img {
   width: 400px;
   border: 2px dashed thistle;
   margin-bottom: 10px;
@@ -488,11 +488,6 @@ ul {
     box-shadow: -8px -1px 0px 1px teal inset;
     display: none;
   }
-  /* .menu i {
-    font-size: 26px;
-    background-color: hotpink;
-    color: black;
-  } */
   .menu img {
     width: 26px;
     height: 28px;
