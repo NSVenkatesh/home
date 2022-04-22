@@ -20,7 +20,7 @@ let data = [
     link: "https://nsvenkatesh.github.io/sample-post/",
   },
 ];
-
+let load = false;
 $(document).ready(function () {
   let x = 0;
   window.history.pushState("", "", "#home");
@@ -49,7 +49,7 @@ $(document).ready(function () {
     x++;
     hide();
   });
-  $(".menu").click(function () {
+  $(".menu").click(function (event) {
     event.stopPropagation();
     if ($(".checkbox").is(":checked")) {
       $(".menu").find("img").attr("src", "");
@@ -92,4 +92,13 @@ $(document).ready(function () {
       </a>
     </div>`);
   }
+});
+$(window).on("load", function () {
+  setTimeout(function () {
+    $(".simpleLoader").css("display", "none");
+    $("html,body").css({
+      overflow: "auto",
+      height: "auto",
+    });
+  }, 1000);
 });
