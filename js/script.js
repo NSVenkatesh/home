@@ -94,11 +94,17 @@ $(document).ready(function () {
   }
 });
 $(window).on("load", function () {
-  setTimeout(function () {
-    $(".simpleLoader").css("display", "none");
-    $("html,body").css({
-      overflow: "auto",
-      height: "auto",
+  setTimeout(() => {
+    $(".simpleLoader").css({
+      transform: "translateX(100vw)",
+      transition: "2s all ease-in-out",
+      width: 0,
     });
-  }, 1000);
+    setTimeout(() => {
+      $("html,body").css({
+        overflow: "auto",
+        height: "auto",
+      });
+    }, 2000);
+  }, 2000);
 });
