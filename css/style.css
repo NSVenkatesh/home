@@ -21,7 +21,6 @@ body {
   width: 100vw;
   height: 100%;
   justify-content: center;
-  text-align: center;
   font-size: 45px;
 }
 .animateText
@@ -76,7 +75,7 @@ body {
   }
   100% {
     transform: rotate(115deg);
-    box-shadow: 60px 80px 100px 15px purple;
+    box-shadow: 60px 80px 100px 15px hotpink;
   }
 }
 ul {
@@ -92,7 +91,6 @@ ul {
   width: 12vw;
   height: 100vh;
   background-color: whitesmoke;
-  box-shadow: 5px -3px 0px 3px rgb(9, 189, 129);
   z-index: 1;
   position: fixed;
   overflow-x: hidden;
@@ -136,6 +134,7 @@ ul {
 .home a {
   background-color: #192438;
   color: white;
+  border-right: 6px solid #09bd81;
 }
 .home a i {
   color: turquoise;
@@ -151,6 +150,7 @@ ul {
   transition: 0.2s all;
   background-color: #192438;
   color: white;
+  border-right: 6px solid #09bd81;
 }
 #active a i {
   color: turquoise;
