@@ -134,7 +134,7 @@ ul {
 .home a {
   background-color: #192438;
   color: white;
-  border-right: 6px solid #09bd81;
+  border-right: 10px solid #09bd81;
 }
 .home a i {
   color: turquoise;
@@ -150,7 +150,7 @@ ul {
   transition: 0.2s all;
   background-color: #192438;
   color: white;
-  border-right: 6px solid #09bd81;
+  border-right: 10px solid #09bd81;
 }
 #active a i {
   color: turquoise;

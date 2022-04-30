@@ -106,5 +106,5 @@ $(window).on("load", function () {
         height: "auto",
       });
     }, 2000);
-  }, 2000);
+  }, 1000);
 });
