@@ -39,19 +39,19 @@
                 </div>
                 <div class="links">
                     <ul class="link">
-                        <li class="opac home">
+                        <li class="opac home homeAnime">
                             <a href="#home" title="home">
                                 <i class="fa-solid fa-house-chimney"></i>
                                 <p>Home</p>
                             </a>
                         </li>
-                        <li class="opac">
+                        <li class="opac resumeAnime">
                             <a href="#resume" title="resume">
                                 <i class="fa-solid fa-id-card"></i>
                                 <p>Resume</p>
                             </a>
                         </li>
-                        <li class="opac">
+                        <li class="opac portfolioAnime">
                             <a href="#portfolio" title="protfolio">
                                 <i class="fa-solid fa-certificate"></i>
                                 <p>Portfolio</p>
@@ -81,19 +81,19 @@
                         <img src="img/logo1.png" alt="nsvenkatesh frontend developer" />
                     </div>
                     <ul class="link">
-                        <li class="opac home">
+                        <li class="opac home homeAnimeM">
                             <a href="#home" title="home">
                                 <i class="fa-solid fa-house-chimney"></i>
                                 <p>Home</p>
                             </a>
                         </li>
-                        <li class="opac">
+                        <li class="opac resumeAnimeM">
                             <a href="#resume" title="resume">
                                 <i class="fa-solid fa-id-card"></i>
                                 <p>Resume</p>
                             </a>
                         </li>
-                        <li class="opac">
+                        <li class="opac portfolioAnimeM">
                             <a href="#portfolio" title="portfolio">
                                 <i class="fa-solid fa-certificate"></i>
                                 <p>Portfolio</p>
@@ -124,12 +124,12 @@
                         <p>Fresher</p>
                     </div>
                     <div class="r-grid">
-                        <div class="about">
+                        <div class="about anime">
                             <h3 class="r-same">About</h3>
                             <p>&emsp;&emsp;I'm a Frontend web developer passionate about creating user interfaces.
                                 Currently living in Tamil Nadu, India. </p>
                         </div>
-                        <div class="social-media">
+                        <div class="social-media anime">
                             <h3 class="r-same">Social media links</h3>
                             <ul class="social-links">
                                 <li>
@@ -158,7 +158,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="education">
+                        <div class="education anime">
                             <h3 class="r-same">Education</h3>
                             <div class="e-detail">
                                 <p class="year">2018 - 2021</p>
@@ -176,7 +176,7 @@
                                 <p>SSLC</p>
                             </div>
                         </div>
-                        <div class="skills">
+                        <div class="skills anime">
                             <h3 class="r-same">Coding Skills</h3>
                             <div class="c-skills">
                                 <h4>HTML5</h4>
@@ -197,7 +197,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="r-button">
+                        <div class="r-button anime">
                             <a href="https://nsvenkatesh.github.io/resume/Resume.pdf" target="_blank"
                                 title="view and download resume" rel="noopener"><button id="btn">View Pdf</button></a>
                         </div>
@@ -242,6 +242,44 @@
             </div>
         </div>
     </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <script>
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                gsap.from(".h-name", { opacity: 0, duration: 2.5, y: -150, ease: "bounce" });
+                gsap.from(".h-desg", { opacity: 0, duration: 2.5, y: 150, ease: "bounce" });
+            }, 2100)
+        })
+        document.querySelector(".homeAnime").addEventListener("click", () => {
+            gsap.from(".h-name", { opacity: 0, duration: 2.5, y: -150, ease: "bounce" });
+            gsap.from(".h-desg", { opacity: 0, duration: 2.5, y: 150, ease: "bounce" });
+        })
+        document.querySelector(".resumeAnime").addEventListener("click", () => {
+            gsap.from(".anime", { opacity: 0, duration: 1, x: -50, stagger: 0.3 });
+        })
+        document.querySelector(".portfolioAnime").addEventListener("click", () => {
+            gsap.from(".anime1", { opacity: 0, duration: 1, y: 100, stagger: 0.4 });
+        })
+
+        // For mobiles
+        document.querySelector(".homeAnimeM").addEventListener("click", () => {
+            gsap.from(".h-name", { opacity: 0, duration: 2.5, y: -150, ease: "bounce" });
+            gsap.from(".h-desg", { opacity: 0, duration: 2.5, y: 150, ease: "bounce" });
+        })
+        document.querySelector(".resumeAnimeM").addEventListener("click", () => {
+            gsap.from(".anime", { opacity: 0, duration: 1, x: -50, stagger: 0.3 });
+        })
+
+        document.querySelector(".portfolioAnimeM").addEventListener("click", () => {
+            gsap.from(".anime1", { opacity: 0, duration: 1, y: 100, stagger: 0.4 });
+        })
+
+
+    </script>
+
 </body>
 
 </html>

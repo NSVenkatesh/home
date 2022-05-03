@@ -426,6 +426,7 @@ ul {
 /* Scroll bar */
 .header {
   display: none;
+  z-index: 2;
 }
 .menu {
   display: none;
@@ -548,7 +549,7 @@ ul {
     background-color: hotpink;
     border-radius: 5px;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
     display: block;
   }
   .menu .checkbox {

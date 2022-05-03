@@ -77,7 +77,7 @@ $(document).ready(function () {
     let img = data[i].img;
     let name = data[i].name;
     let link = data[i].link;
-    $(".p-flex").append(`<div class="p-content">
+    $(".p-flex").append(`<div class="p-content anime1">
       <div class="img-scale">
         <img src=${img} alt=${name} />
       </div>
@@ -96,15 +96,13 @@ $(document).ready(function () {
 $(window).on("load", function () {
   setTimeout(() => {
     $(".simpleLoader").css({
-      transform: "translateX(100vw)",
-      transition: "2s all ease-in-out",
-      width: 0,
+      transition: "1s all ease-in-out",
+      opacity: 0,
+      zIndex: -10,
     });
-    setTimeout(() => {
-      $("html,body").css({
-        overflow: "auto",
-        height: "auto",
-      });
-    }, 2000);
-  }, 1000);
+    $("html,body").css({
+      overflow: "auto",
+      height: "auto",
+    });
+  }, 2000);
 });
