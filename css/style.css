@@ -14,7 +14,7 @@ body {
 .simpleLoader {
   overflow: hidden;
   background-color: black;
-  z-index: 10;
+  z-index: 15;
   position: fixed;
   display: flex;
   align-items: center;
