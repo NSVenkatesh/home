@@ -19,6 +19,11 @@ let data = [
     name: "Sample post with gif",
     link: "https://nsvenkatesh.github.io/sample-post/",
   },
+  {
+    img: "img/tenor.png",
+    name: "Tenor Gif Clone",
+    link: "https://nsvenkatesh.github.io/tenor/",
+  },
 ];
 let load = false;
 $(document).ready(function () {
