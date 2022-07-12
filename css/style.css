@@ -257,8 +257,11 @@ ul {
 .skill-percent.skill-75 {
   width: 75%;
 }
-.skill-percent.skill-6 {
+.skill-percent.skill-65 {
   width: 65%;
+}
+.skill-percent.skill-60 {
+  width: 60%;
 }
 .r-grid {
   display: grid;
