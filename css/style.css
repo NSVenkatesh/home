@@ -57,9 +57,12 @@ ul {
   font-family: cursive, sans-serif;
 }
 /* Left side */
-.left {
+.left{
+  border-radius: 10px;
   width: 12vw;
-  height: 100vh;
+  height: 85vh;
+  top: 7.5%;
+  left: 10px;
   background-color: white;
   z-index: 1;
   position: fixed;
@@ -483,6 +486,25 @@ ul {
   }
 }
 @media only screen and (max-width: 1249px) {
+  .img {
+    width: 102px;
+    height: 105px;
+    border: 2px solid #192438;
+  }
+  #name {
+    font-size: 15px;
+  }
+  .link p {
+    font-size: 16px;
+  }
+  .skill-range {
+    width: 400px;
+  }
+  .about p {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-height: 680px) {
   .img {
     width: 102px;
     height: 105px;
