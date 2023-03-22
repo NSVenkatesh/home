@@ -60,7 +60,7 @@ ul {
 .left {
   width: 12vw;
   height: 100vh;
-  background-color: whitesmoke;
+  background-color: white;
   z-index: 1;
   position: fixed;
   overflow-x: hidden;
@@ -101,29 +101,29 @@ ul {
 .opac {
   transition: 0.2s all;
 }
-.home a {
+/* .home a {
   background-color: #192438;
   color: white;
   border-right: 10px solid #09bd81;
 }
 .home a i {
   color: turquoise;
-}
-.opac:hover a {
+} */
+.opac a:hover {
   background-color: #192438;
   color: white;
 }
 .opac:hover a i {
   color: turquoise;
 }
-#active a {
+.active{
   transition: 0.2s all;
   background-color: #192438;
-  color: white;
+  color: white !important;
   border-right: 10px solid #09bd81;
 }
-#active a i {
-  color: turquoise;
+.active i {
+  color: turquoise !important;
 }
 .link i {
   font-size: 22px;
@@ -135,6 +135,7 @@ ul {
 }
 /* Right side */
 .right {
+  overflow: hidden;
   width: 88vw;
   transform: translateX(11vw);
   padding: 0px 30px 0px 40px;
@@ -192,6 +193,7 @@ ul {
   padding-right: 40px;
 }
 .about p {
+  word-spacing: 3px;
   font-size: 18px;
 }
 .social-links {

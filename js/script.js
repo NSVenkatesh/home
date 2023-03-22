@@ -15,11 +15,6 @@ let data = [
     link: "http://exchangerate.orgfree.com/Exchangerate/index.html",
   },
   {
-    img: "img/sample-post.png",
-    name: "Sample post with gif",
-    link: "https://nsvenkatesh.github.io/sample-post/",
-  },
-  {
     img: "img/tenor.png",
     name: "Tenor Gif Clone",
     link: "https://nsvenkatesh.github.io/tenor/",
@@ -29,31 +24,6 @@ let load = false;
 $(document).ready(function () {
   let x = 0;
   window.history.pushState("", "", "#home");
-  $(".opac").click(function () {
-    let id = $(this).attr("id");
-    let href = $(this).find("a").attr("href");
-    if (href == "#resume") {
-      $(".skill-percent").addClass("skill-a");
-    } else {
-      $(".skill-percent").removeClass("skill-a");
-    }
-    if (id == "active") {
-      var y = x - 1;
-    }
-    $(".opac").each(function () {
-      $(this).attr("id", " ");
-      $(".opac").removeClass("home");
-    });
-    if (id == undefined || id == " ") {
-      $(this).attr("id", "active");
-    } else if (x != y) {
-      $(this).attr("id", "active");
-    } else {
-      $(this).attr("id", " ");
-    }
-    x++;
-    hide();
-  });
   $(".menu").click(function (event) {
     event.stopPropagation();
     if ($(".checkbox").is(":checked")) {
@@ -82,7 +52,8 @@ $(document).ready(function () {
     let img = data[i].img;
     let name = data[i].name;
     let link = data[i].link;
-    $(".p-flex").append(`<div class="p-content anime1">
+    $(".p-flex")
+      .append(`<div class="p-content" data-aos="fade-left" data-aos-duration="800">
       <div class="img-scale">
         <img src=${img} alt=${name} />
       </div>
@@ -98,6 +69,7 @@ $(document).ready(function () {
     </div>`);
   }
 });
+
 $(window).on("load", function () {
   setTimeout(() => {
     $(".simpleLoader").css({
