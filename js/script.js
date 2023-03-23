@@ -25,7 +25,7 @@ let data = [
     name: "Tenor Gif",
     link: "https://nsvenkatesh.github.io/tenor/",
     content:
-      "Tenor Gif is a prototype of popular online platform Tenor that provides a vast collection of animated GIFs. Technologies used HTML, CSS, React Js",
+      "Tenor Gif is a prototype of popular online platform Tenor that provides a vast collection of animated GIFs. Technologies used HTML, CSS, React Js.",
   },
 ];
 let load = false;
