@@ -106,14 +106,6 @@ ul {
 .opac {
   transition: 0.2s all;
 }
-/* .home a {
-  background-color: #192438;
-  color: white;
-  border-right: 10px solid #09bd81;
-}
-.home a i {
-  color: turquoise;
-} */
 .opac a:hover {
   background-color: #192438;
   color: white;
@@ -144,7 +136,6 @@ ul {
   width: 88vw;
   transform: translateX(11vw);
   padding: 0px 30px 0px 40px;
-  /* background-color: #0f1622; */
   color: white;
 }
 .home-c {
