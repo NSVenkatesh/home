@@ -316,57 +316,6 @@
         </div>
       </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-
-    <script>
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          gsap.from(".h-name", {
-            opacity: 0,
-            duration: 2.5,
-            y: -150,
-            ease: "bounce",
-          });
-          gsap.from(".h-desg", {
-            opacity: 0,
-            duration: 2.5,
-            y: 150,
-            ease: "bounce",
-          });
-        }, 2100);
-      });
-      document.querySelector(".homeAnime").addEventListener("click", () => {
-        gsap.from(".h-name", {
-          opacity: 0,
-          duration: 2.5,
-          y: -150,
-          ease: "bounce",
-        });
-        gsap.from(".h-desg", {
-          opacity: 0,
-          duration: 2.5,
-          y: 150,
-          ease: "bounce",
-        });
-      });
-
-      // For mobiles
-      document.querySelector(".homeAnimeM").addEventListener("click", () => {
-        gsap.from(".h-name", {
-          opacity: 0,
-          duration: 2.5,
-          y: -150,
-          ease: "bounce",
-        });
-        gsap.from(".h-desg", {
-          opacity: 0,
-          duration: 2.5,
-          y: 150,
-          ease: "bounce",
-        });
-      });
-    </script>
     <!-- Annimations -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -395,21 +344,19 @@
       });
     </script>
 
-    <!-- backgroung -->
+    <!-- background -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
     <script>
-      VANTA.BIRDS({
+      VANTA.WAVES({
         el: ".main",
         mouseControls: true,
         touchControls: true,
-        gyroControls: false,
+        gyroControls: true,
         minHeight: 200.0,
         minWidth: 200.0,
         scale: 1.0,
-        scaleMobile: 1.0,
-        speedLimit: 4.0,
-        quantity: 3.0,
+        color: 0x8081f,
       });
     </script>
   </body>
