@@ -2,6 +2,7 @@ let data = [
   {
     img: "img/flipkart.png",
     name: "Flipkart mobile listing",
+    alt: "Flipkart_mobile_listing",
     link: "https://nsvenkatesh.github.io/flipkart/Flipkart/",
     content:
       "This design represents the prototype of flipkart mobile listing. Only a few search filters works. Technologies used HTML, CSS, jQuery.",
@@ -9,6 +10,7 @@ let data = [
   {
     img: "img/2048game.png",
     name: "2048 game",
+    alt: "2048_img",
     link: "https://nsvenkatesh.github.io/2048game/2048/",
     content:
       "2048 is a puzzle game. The game is 4x4 grid and the goal is to combine tiles with the same numbers to create a tile with the value of 2048. Technologies used HTML, CSS, jQuery.",
@@ -16,6 +18,7 @@ let data = [
   {
     img: "img/currencyconvertor.png",
     name: "Currency convertor",
+    alt: "currency_convertor",
     link: "http://exchangerate.orgfree.com/Exchangerate/index.html",
     content:
       "Currency converter is an online tool that allows users to convert the value of one currency to another in real-time based on current exchange rates. Technologies used HTML, CSS, jQuery.",
@@ -23,6 +26,7 @@ let data = [
   {
     img: "img/tenor.png",
     name: "Tenor Gif",
+    alt: "tenor_gif",
     link: "https://nsvenkatesh.github.io/tenor/",
     content:
       "Tenor Gif is a prototype of popular online platform Tenor that provides a vast collection of animated GIFs. Technologies used HTML, CSS, React Js.",
@@ -59,6 +63,7 @@ $(document).ready(function () {
   for (i in data) {
     let img = data[i].img;
     let name = data[i].name;
+    let alt = data[i].alt;
     let link = data[i].link;
     let content = data[i].content;
     $(".p-flex").append(`<div
@@ -71,7 +76,7 @@ $(document).ready(function () {
         data-aos="flip-right"
         data-aos-duration="800"
       >
-        <img src=${img} alt=${name} />
+        <img src=${img} alt=${alt} />
       </div>
       <div class="pw-details">
         <div>
